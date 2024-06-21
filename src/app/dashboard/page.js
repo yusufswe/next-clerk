@@ -1,10 +1,12 @@
+import { UserButton } from "@clerk/nextjs";
+
 export default function Dashboard() {
   return (
-    <main className="h-screen flex justify-center items-center">
-      <header className="fixed inset-8 flex justify-between">
-        <div>Yusuf.Co</div>
+    <main>
+      <header className="flex justify-between p-8">
+        <h1>Dashboard</h1>
+        <UserButton />
       </header>
-      <h2 className="text-2xl font-bold">Dashboard</h2>
     </main>
   );
 }
